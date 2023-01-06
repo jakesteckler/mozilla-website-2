@@ -12,7 +12,7 @@
 <body>
 	<h1> Mozilla is Cool </h1>
 
-	<img src="https://blog.mozilla.org/addons/files/2017/10/firefox-logo.png"
+	<img id="fox-image" src="https://blog.mozilla.org/addons/files/2017/10/firefox-logo.png" width="300" height="300" class="hidden"
 	 width="300" 
      height="300"/
 	/>
@@ -49,10 +49,12 @@
 
 	<p class="quote"> "This quote will change the world" - Jake Steckler </p>
 	
-	<button>Show Fox</button>
-	
-	<button>Hide Fox</button>
-	
+	<button onclick="showImage()">Show Fox</button>
+	<button onclick="hideImage()">Hide Fox</button>
+
+
+
+
 	<script src="scripts/main.js"></script>
 
 </body>
