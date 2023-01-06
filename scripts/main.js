@@ -1,8 +1,6 @@
 const myHeading = document.querySelector("h1");
 myHeading.textContent = "Hello world!";
 
- alert('Warning, this is a popup alert!!!');
-
  // Define a Function
  function sayOuch() {
  	alert('Ouch! Stop poking me!');
