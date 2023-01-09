@@ -12,9 +12,9 @@
 <body>
 	<h1> Mozilla is Cool </h1>
 
-	<img src="https://blog.mozilla.org/addons/files/2017/10/firefox-logo.png"
+	<img id="fox-image" src="images/firefox-logo.png" alt="fox" width="300" height="300" class="hidden"
 	 width="300" 
-     height="300"/
+     height="300"
 	/>
 
 	<p>At Mozilla, we're a global community of</p>
@@ -48,6 +48,29 @@
 	<p>Donec nec turpis eu augue mollis tristique in sit amet risus. Pellentesque dapibus viverra metus id dictum. Vestibulum hendrerit hendrerit purus. In hac habitasse platea dictumst. Ut egestas lorem non dui sodales congue et vel felis. Proin nisl dolor, viverra sit amet tempus quis, faucibus non ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sagittis laoreet felis, quis ultricies nunc lacinia sit amet.</p>
 
 	<p class="quote"> "This quote will change the world" - Jake Steckler </p>
+	
+	<button onclick="showImage()">Show Fox</button>
+	<button onclick="hideImage()">Hide Fox</button>
+
+	<style>
+  	.hidden {
+    display: none;
+  	}
+	</style>
+
+	<script>
+  	function showImage() {
+    document.getElementById("fox-image").classList.remove("hidden");
+  	}
+
+  function hideImage() {
+    document.getElementById("fox-image").classList.add("hidden");
+  	}
+	</script>
+
+
+
+	<script src="scripts/main.js"></script>
 
 </body>
 </html>
