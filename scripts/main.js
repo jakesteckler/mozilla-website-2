@@ -11,3 +11,13 @@ myHeading.textContent = "Hello world!";
  
  // Assign the function to the onclick event on that element
  foxImage.onclick = sayOuch;
+
+ <script>
+    function showImage() {
+    document.getElementById("fox-image").classList.remove("hidden");
+    }
+
+  function hideImage() {
+    document.getElementById("fox-image").classList.add("hidden");
+    }
+    </script>
